@@ -1,13 +1,157 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+.navbar-section {
+	/* border-bottom: 1px solid black; */
+}
+.navbar-nav .nav-link {
+	color: black;
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Roboto';
+}
+
+.navbar-nav .nav-link:hover {
+	color: black;
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Roboto';
+	text-decoration: underline;
+	text-decoration-color: #2c2f44;
+	transition: 0.4s;
+}
+
+.navbar {
+	background-color: #fafafa;
+}
+
+/* Hero starts */
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	padding-top: 3rem;
+}
+
+.title-wrapper {
+	text-align: center;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 3px solid #fafafa;
+	padding: 7rem 4rem;
+	margin: auto;
+}
+
+.title-text h1 {
+	font-size: 7rem;
+	color: #fafafa;
+}
+
+.title-text p {
+	font-size: 1.5rem;
+	color: #fafafa;
+}
+
+.welcome-message {
+	height: 100%;
+	padding: 7rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.2rem;
+	margin: auto;
+	font-family: 'Poppins';
+	line-height: 35px;
+}
+
+.icons {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.icons > * {
+	margin-right: 10px;
+}
+
+.custom-btn {
+	margin-top: 2rem;
+	color: #fafafa;
+	background-color: #2c2f44;
+	width: auto;
+	display: block;
+}
+
+/* Hero ends */
+
+/* About */
+.about {
+	/* border-top: 1px solid black;
+	border-bottom: 1px solid black; */
+}
+
+.about h2 {
+	text-decoration: underline solid #998f 7px;
+}
+
+.skills {
+	background-color: #fafafa;
+}
+.skills-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+.skill-card {
+	border: 3px solid var(--secondaryColor);
+	/* background: var(--mainColor); */
+	width: 6.3rem;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+	perspective: 1000px;
+}
+.skill-icon {
+	width: 4em;
+	transition: 0.6s;
+}
+
+.skill-card:hover .skill-icon {
+	transform: rotateY(180deg);
+}
+
+.skill-name {
+	font-family: var(--fontText);
+	color: black;
+	padding: 0.7rem 0 0 0;
+	font-weight: 600;
+}
+/* About ends */

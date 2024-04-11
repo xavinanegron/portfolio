@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"name": "HTML5",
+		"img": "/icons/html.svg"
+	},
+	{
+		"id": 2,
+		"name": "CSS3",
+		"img": "/icons/css.svg"
+	},
+	{
+		"id": 3,
+		"name": "Bootstrap5",
+		"img": "/icons/bootstrap.svg"
+	},
+	{
+		"id": 4,
+		"name": "JavaScript",
+		"img": "/icons/javascript.svg"
+	},
+	{
+		"id": 5,
+		"name": "React.js",
+		"img": "/icons/react.svg"
+	},
+	{
+		"id": 6,
+		"name": "React Native",
+		"img": "/icons/react.svg"
+	},
+	{
+		"id": 7,
+		"name": "Express",
+		"img": "/icons/express.svg"
+	},
+	{
+		"id": 8,
+		"name": "Mongo DB",
+		"img": "/icons/mongo.svg"
+	}
+]
