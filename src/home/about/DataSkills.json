@@ -21,22 +21,22 @@
 	},
 	{
 		"id": 5,
-		"name": "React.js",
+		"name": "React",
 		"img": "/icons/react.svg"
 	},
 	{
 		"id": 6,
-		"name": "React Native",
-		"img": "/icons/react.svg"
-	},
-	{
-		"id": 7,
 		"name": "Express",
 		"img": "/icons/express.svg"
 	},
 	{
-		"id": 8,
+		"id": 7,
 		"name": "Mongo DB",
 		"img": "/icons/mongo.svg"
+	},
+	{
+		"id": 8,
+		"name": "GitHub",
+		"img": "/icons/github.svg"
 	}
 ]

@@ -1,14 +1,14 @@
-import NavbarComponent from './home/Navbar';
 import Hero from './home/Hero';
 import About from './home/about/About';
 import './index.css';
+import Projects from './home/projects/Projects';
 
 function App() {
 	return (
 		<>
-			<NavbarComponent />
 			<Hero />
 			<About />
+			<Projects/>
 		</>
 	);
 }

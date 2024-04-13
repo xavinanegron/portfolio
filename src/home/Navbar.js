@@ -12,14 +12,14 @@ const NavbarComponent = () => {
 			expand='lg'
 			variant='dark'
 			fixed='center'
-			className='navbar-section'
+			className='navbar-section p-4 sticky'
 		>
 			<Navbar.Toggle
 				aria-controls='responsive-navbar-nav'
 				onClick={() => setExpanded(!expanded)}
 			/>
 			<Navbar.Collapse id='responsive-navbar-nav'>
-				<Nav className='navbar ml-auto px-5 p-2'>
+				<Nav className='navbar ml-auto p-2'>
 					<Nav.Link
 						href='#home'
 						onClick={() => setExpanded(false)}
