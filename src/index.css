@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'BrotherSignature';
+	src: local('BrotherSignature'),
+		url('./fonts/BrotherSignature.otf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Gustatory';
+	src: local('Gustatory'), url('./fonts/Gustatory.ttf') format('opentype');
+	font-weight: normal;
+}
 * {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
@@ -15,8 +27,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	background: #ff6e7f;
-	background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);
-	background: linear-gradient(to right, #bfe9ff, #fbc0c6);
+	background: -webkit-linear-gradient(to right, #f6d5f7, #fbe9d7);
+	background: linear-gradient(to right, #f6d5f7, #fbe9d7);
 }
 /* Peachy */
 /* background: #EC6F66; 
@@ -57,30 +69,39 @@ background: linear-gradient(to right, #F3A183, #EC6F66);  */
 }
 .decorative-line {
 	border: none;
-	border-top: 3px solid #8a53b2; /* Adjust the color and thickness as needed */
+	border-top: 3px solid #cd4662; /* Adjust the color and thickness as needed */
 }
 
 /* Navbar */
-.navbar-nav .nav-link {
+.navbar-section {
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.links {
 	font-family: 'Poppins';
 	color: #333333;
-	font-size: 20px;
+	font-size: 20px; 
+	cursor: pointer;
+	text-decoration: none;
 }
-.navbar-nav .nav-link:hover {
-	color: #333333;
+
+.links:hover {
 	text-decoration: 2px underline;
-	text-decoration-color: #4b0082;
+	text-decoration-color: #cd4662;
 	transition: 1s;
 }
 /* Navbar ends */
 
 /* Hero starts */
 .hero {
-	padding: 10rem;
+	padding: 15rem;
 	display: flex;
 	justify-content: center;
 	width: 100vw;
 	margin: 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes gradientAnimation {
@@ -103,7 +124,7 @@ background: linear-gradient(to right, #F3A183, #EC6F66);  */
 .title-text h1 {
 	font-size: 4.5rem;
 	overflow-y: hidden;
-	color: #4b0082;
+	color: black;
 	text-align: center;
 	font-family: 'Montserrat';
 }
@@ -115,7 +136,7 @@ background: linear-gradient(to right, #F3A183, #EC6F66);  */
 }
 .title-wrapper .title-job {
 	font-size: 2rem;
-	color: #8a53b2;
+	color: #cd4662;
 	text-align: center;
 	font-family: 'Montserrat';
 }
@@ -129,13 +150,11 @@ background: linear-gradient(to right, #F3A183, #EC6F66);  */
 /* About */
 .about {
 	background: #f0f0f0;
-	/* background: -webkit-linear-gradient(to right, #bfe9ff, #f6dee1);
-	background: linear-gradient(to right, #bfe9ff, #e6c9fc); */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .about h2 {
-	color: #820079;
-	text-align: center;
-	font-family: 'Dancing Script';
+	color: #cd4662;
+	font-family: 'BrotherSignature';
 	overflow-y: hidden;
 	font-weight: 500;
 }
@@ -220,15 +239,16 @@ background: linear-gradient(to right, #F3A183, #EC6F66);  */
 
 /* Projects */
 .projects {
-	background: #f0f0f0;
+	background-color: #f7eaed;
 }
 .project {
 	margin: 1rem;
+	/* outline: 2px solid #333333; */
+	border-radius: px;
+	background-color: #fafafa;
 }
 .project-container {
 	padding: 3rem;
-	/* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-	border-radius: 15px; */
 }
 .tool-icon:hover {
 	transform: rotateY(360deg);
@@ -238,9 +258,58 @@ background: linear-gradient(to right, #F3A183, #EC6F66);  */
 	transition: 0.6s;
 }
 
-.custom-btn {
-	background-color: #f0f0f0;
-	border: none;
+.project:hover {
+	animation: floatUpDownHover 2s ease infinite;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
 }
 
+@keyframes floatUpDownHover {
+	0%,
+	100% {
+		transform: translateY(0); /* Initial and final position */
+	}
+	50% {
+		transform: translateY(-15px); /* Float up slightly */
+	}
+}
 /* Projects end */
+
+/* Contact */
+.contact {
+	background: #f0f0f0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding-left: 15rem;
+	padding-right: 15rem;
+}
+.contact h2 {
+	color: #cd4662;
+	font-family: 'BrotherSignature';
+	overflow-y: hidden;
+	font-weight: 500;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+/* Contact ends */
+
+/* Target the container with the scrollbar */
+.image-container::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Handle */
+.image-container::-webkit-scrollbar-thumb {
+    background-color: #cd4662; /* Set the color of the scrollbar handle */
+    border-radius: 6px; /* Set the border radius of the scrollbar handle */
+}
+
+

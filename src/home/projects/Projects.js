@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
 import projectsData from './ProjectsData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -54,43 +53,62 @@ function Projects() {
 		}
 	};
 
+	const handleDemoClick = (demoLink) => {
+		window.open(demoLink, '_blank');
+	};
+
+	const handleGithubClick = (githubLink) => {
+		window.open(githubLink, '_blank');
+	};
+
 	return (
-		<Container className='projects py-5 d-flex align-items-center justify-content-center'>
-			<div style={{ maxWidth: '1200px' }}>
+		<div
+			className='projects py-5 d-flex'
+			id='projects'
+		>
+			<div
+				className='container'
+				style={{ maxWidth: '1050px' }}
+			>
 				<h2
-					className='display-3 mb-5 mt-5 text-center'
+					className='display-2 py-5 mt-5 ml-5 text-start'
 					style={{
-						color: '#820079',
+						color: '#cd4662',
 						fontWeight: '500',
-						fontFamily: 'Dancing Script',
+						fontFamily: 'BrotherSignature',
+						overflowY: 'hidden',
 					}}
 				>
-					Some of my work!
+					Some of my Work!
 				</h2>
-				<Row>
+				<div className='row'>
 					{projects.map((project) => (
-						<Col
-							lg={6}
+						<div
+							className='col-lg-6'
 							key={project.id}
 						>
 							<div className='project'>
 								<div className='project-container'>
-									<img
-										src={project.imageUrl}
-										alt={project.title}
-										style={{
-											width: '400px',
-											height: 'auto',
-											display: 'block',
-											margin: '0 auto',
-											borderRadius: '8px',
-										}}
-									/>
+									<div
+										className='video-container'
+										style={{ maxHeight: '300px', overflowY: 'auto' }}
+									>
+										<video
+											src={project.imageUrl}
+											alt={project.title}
+											style={{
+												width: '100%',
+												height: 'auto',
+												display: 'block',
+											}}
+										/>
+									</div>
 									<h3
 										className='project-title pt-4 text-center'
 										style={{
 											color: '#333333',
 											fontFamily: 'Poppins',
+											overflowY: 'hidden',
 										}}
 									>
 										{project.title}
@@ -99,11 +117,11 @@ function Projects() {
 									<p
 										className='project-description pt-3'
 										style={{
-											fontSize: '18px',
+											fontSize: '17px',
 											fontFamily: 'Poppins',
 											fontWeight: 300,
-											color: 'black',
-											lineHeight: '30px',
+											color: '#333333',
+											lineHeight: '28px',
 											textAlign: 'justify',
 										}}
 									>
@@ -113,43 +131,49 @@ function Projects() {
 										{project.tools.map((tool, index) => (
 											<span
 												key={index}
-												className='tool-icon mr-3'
+												className='tool-icon mr-4'
 											>
 												{renderToolIcon(tool)}
 											</span>
 										))}
 									</div>
 									<div className='d-flex justify-content-center'>
-										<Button
-											className='custom-btn col-lg-6 outline'
+										<button
+											className='btn custom-btn m-2'
 											style={{
 												maxWidth: '150px',
-												color: '#8a53b2',
+												color: '#fafafa',
+												backgroundColor: '#e58c9e',
 												fontSize: '18px',
 												cursor: 'pointer',
+												borderRadius: '0',
 											}}
+											onClick={() => handleDemoClick(project.demoLink)}
 										>
 											Live Demo
-										</Button>
-										<Button
-											className='custom-btn col-lg-6 ml-2 outline'
+										</button>
+										<button
+											className='btn custom-btn ml-2 m-2'
 											style={{
 												maxWidth: '150px',
-												color: '#8a53b2',
+												color: '#fafafa',
+												backgroundColor: '#e58c9e',
 												fontSize: '18px',
 												cursor: 'pointer',
+												borderRadius: '0',
 											}}
+											onClick={() => handleGithubClick(project.githubLink)}
 										>
 											View Code <FontAwesomeIcon icon={faGithub} />
-										</Button>
+										</button>
 									</div>
 								</div>
 							</div>
-						</Col>
+						</div>
 					))}
-				</Row>
+				</div>
 			</div>
-		</Container>
+		</div>
 	);
 }
 

@@ -2,6 +2,8 @@ import Hero from './home/Hero';
 import About from './home/about/About';
 import './index.css';
 import Projects from './home/projects/Projects';
+import Contact from './home/contact/Contact';
+import Footer from './home/Footer';
 
 function App() {
 	return (
@@ -9,6 +11,8 @@ function App() {
 			<Hero />
 			<About />
 			<Projects />
+			<Contact/>
+			<Footer/>
 		</>
 	);
 }

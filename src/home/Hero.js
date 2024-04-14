@@ -9,19 +9,27 @@ function Hero() {
 	return (
 		<>
 			<NavbarComponent />
-			<div className='hero'>
+			<div
+				className='hero stick'
+				id='home'
+			>
 				<div className='row title-container'>
-					<div className=' col-lg-12 d-flex align-items-center'>
+					<div className='col-lg-12 d-flex align-items-center'>
 						<div className='title-wrapper p-5'>
 							<div className='title-text'>
-								<h1>Hi there, I'm Xavina </h1>
+								<h1>
+									Hello,{' '}
+									<span
+										style={{
+											fontFamily: 'BrotherSignature',
+											fontSize: '4.7rem',
+										}}
+									>
+										I'm Xavina{' '}
+									</span>
+								</h1>
 								<p className='title-job'>
 									Frontend Developer based in Orlando, FL
-									{/* <Typewriter
-									text=''
-									delay={250}
-									infinite
-								/> */}
 								</p>
 								<div className='welcome-message'>
 									<p
@@ -40,49 +48,52 @@ function Hero() {
 										about all things tech!
 									</p>
 									<div className='icons text-center'>
-										<FontAwesomeIcon
-											icon={faLinkedin}
-											style={{
-												color: '#8a53b2',
-												fontSize: '40px',
-												padding: '15px',
-											}}
-										/>
-										<FontAwesomeIcon
-											icon={faEnvelope}
-											style={{
-												color: '#8a53b2',
-												fontSize: '40px',
-												padding: '15px',
-											}}
-										/>
-										<FontAwesomeIcon
-											icon={faGithub}
-											style={{
-												color: '#8a53b2',
-												fontSize: '40px',
-												padding: '15px',
-											}}
-										/>
+										<a
+											href='https://www.linkedin.com/in/xavinanegronds/'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<FontAwesomeIcon
+												icon={faLinkedin}
+												style={{
+													color: '#cd4662',
+													fontSize: '40px',
+													padding: '15px',
+													cursor: 'pointer',
+												}}
+											/>
+										</a>
+										<a href='mailto:xavinanegron@gmail.com'>
+											<FontAwesomeIcon
+												icon={faEnvelope}
+												style={{
+													color: '#cd4662',
+													fontSize: '40px',
+													padding: '15px',
+													cursor: 'pointer',
+												}}
+											/>
+										</a>
+										<a
+											href='https://github.com/xavinanegron'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<FontAwesomeIcon
+												icon={faGithub}
+												style={{
+													color: '#cd4662',
+													fontSize: '40px',
+													padding: '15px',
+													cursor: 'pointer',
+												}}
+											/>
+										</a>
 									</div>
-									{/* <p className='lead text-start'>
-									<button
-										className='custom-btn btn outline'
-										href='#about'
-										style={{
-											marginTop: '2rem',
-											color: 'black',
-											fontSize: '1.5rem',
-										}}
-									>
-										More About Me
-									</button>
-								</p> */}
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className='welcome-message-container col-lg-6 d-flex align-items-center'></div>
 				</div>
 			</div>
 		</>

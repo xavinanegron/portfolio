@@ -3,7 +3,7 @@ import DataSkills from './DataSkills.json';
 
 function About() {
 	return (
-		<div className='about py-5'>
+		<div className='about py-5' id='about'>
 			<div className='container py-5 text-center'>
 				<div className='container row'>
 					<div className='col-5 d-none d-lg-block align-self-center px-5'>
@@ -16,7 +16,7 @@ function About() {
 						/>
 					</div>
 					<div className='col-lg-7'>
-						<h2 className='display-3 mb-5 text-start'>
+						<h2 className='display-2 mb-5 text-start'>
 							A little bit about me!
 						</h2>
 
@@ -29,11 +29,11 @@ function About() {
 								lineHeight: '40px',
 							}}
 						>
-							Greetings, I'm Xavina, a graduate of Nucamp's Full Stack Web and
-							Mobile App Development bootcamp. I'm currently pursuing a BAS
-							degree in Computing Technology and Software Development. Outside
-							of coding, I find joy in painting, exploring the great outdoors
-							with my miniature australian shepherd and staying active. <br />
+							Hi there, I'm Xavina, currently pursuing a BAS degree in Computing
+							Technology and Software Development and most recently a graduate
+							of Nucamp's Full Stack Web and Mobile App Development bootcamp.
+							Outside of coding, I find joy in painting, taking my miniature
+							australian shepherd out for walks and staying active. <br />
 							Detail-oriented and with a boundless curiosity, I see software
 							development as the perfect canvas for my skills. It's where I
 							thrive on creative problem-solving and relish the chance to dive
@@ -42,12 +42,22 @@ function About() {
 						</p>
 						<p className='lead text-start'>
 							<button
-								className='custom-btn btn mb-5 mx-1 outline'
+								className='custom-btn btn mb-5 mx-1'
 								href='#about'
 								style={{
 									marginTop: '2rem',
-									color: '#8a53b2',
-									fontSize: '1.5rem',
+									color: '#fafafa',
+									backgroundColor: '#cd4662',
+									fontSize: '1.3rem',
+									borderRadius: '0',
+								}}
+								onMouseOver={(e) => {
+									e.currentTarget.style.backgroundColor = '#e58c9e';
+									e.currentTarget.style.Color = '#cd4662';
+								}}
+								onMouseOut={(e) => {
+									e.currentTarget.style.backgroundColor = '#cd4662';
+									e.currentTarget.style.Color = '#cd4662';
 								}}
 							>
 								Download Resume
@@ -57,8 +67,8 @@ function About() {
 				</div>
 				<hr className='decorative-line' />
 			</div>
-			<div className='skills col-lg-12'>
-				<h2 className='section-title display-3 py-5 text-start'>
+			<div className='skills col-lg-12' id='skills'>
+				<h2 className='section-title display-2 py-5  text-start'>
 					My Tech Stack
 				</h2>
 				<div className='d-flex justify-content-center pb-5'>
