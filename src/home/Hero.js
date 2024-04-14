@@ -14,10 +14,7 @@ function Hero() {
 					<div className=' col-lg-12 d-flex align-items-center'>
 						<div className='title-wrapper p-5'>
 							<div className='title-text'>
-								<h1>
-									Hello, I'm Xavina{' '}
-									
-								</h1>
+								<h1>Hi there, I'm Xavina </h1>
 								<p className='title-job'>
 									Frontend Developer based in Orlando, FL
 									{/* <Typewriter
@@ -29,7 +26,12 @@ function Hero() {
 								<div className='welcome-message'>
 									<p
 										className='message px-5'
-										style={{ fontSize: '20px', lineHeight: '40px' }}
+										style={{
+											fontSize: '22px',
+											lineHeight: '40px',
+											color: '#333333',
+											fontWeight: '300',
+										}}
 									>
 										Welcome to my portfolio! Take a look around and get to know
 										the projects I've been tinkering with. From code to design,
@@ -41,7 +43,7 @@ function Hero() {
 										<FontAwesomeIcon
 											icon={faLinkedin}
 											style={{
-												color: '#cd7676',
+												color: '#8a53b2',
 												fontSize: '40px',
 												padding: '15px',
 											}}
@@ -49,7 +51,7 @@ function Hero() {
 										<FontAwesomeIcon
 											icon={faEnvelope}
 											style={{
-												color: '#cd7676',
+												color: '#8a53b2',
 												fontSize: '40px',
 												padding: '15px',
 											}}
@@ -57,7 +59,7 @@ function Hero() {
 										<FontAwesomeIcon
 											icon={faGithub}
 											style={{
-												color: '#cd7676',
+												color: '#8a53b2',
 												fontSize: '40px',
 												padding: '15px',
 											}}
@@ -88,4 +90,3 @@ function Hero() {
 }
 
 export default Hero;
-

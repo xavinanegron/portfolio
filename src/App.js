@@ -8,7 +8,7 @@ function App() {
 		<>
 			<Hero />
 			<About />
-			<Projects/>
+			<Projects />
 		</>
 	);
 }

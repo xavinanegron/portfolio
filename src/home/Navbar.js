@@ -10,7 +10,6 @@ const NavbarComponent = () => {
 		<Navbar
 			expanded={expanded}
 			expand='lg'
-			variant='dark'
 			fixed='center'
 			className='navbar-section p-4 sticky'
 		>

@@ -14,8 +14,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(180deg, rgb(234, 227, 199), #fafafa);
+	background: #ff6e7f;
+	background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);
+	background: linear-gradient(to right, #bfe9ff, #fbc0c6);
 }
+/* Peachy */
+/* background: #EC6F66; 
+background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  
+background: linear-gradient(to right, #F3A183, #EC6F66);  */
 
 @keyframes gradientBG {
 	0% {
@@ -32,33 +38,38 @@ body {
 /* Particle styling */
 .particle {
 	position: absolute;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(250, 245, 245, 0.7);
+	width: 5px;
+	height: 5px;
 	border-radius: 50%;
-	animation: particleMove 20s linear infinite;
+	animation: particleMove 10s linear infinite;
 }
 
 @keyframes particleMove {
 	from {
-		transform: translate(0, 100vh);
+		transform: translateY(100vh);
+		opacity: 1;
 	}
 	to {
-		transform: translate(0, -100vh);
+		transform: translateY(-100vh);
+		opacity: 0;
 	}
+}
+.decorative-line {
+	border: none;
+	border-top: 3px solid #8a53b2; /* Adjust the color and thickness as needed */
 }
 
 /* Navbar */
-.navbar-section {
-}
-
 .navbar-nav .nav-link {
 	font-family: 'Poppins';
-	color: #917878;
+	color: #333333;
 	font-size: 20px;
 }
 .navbar-nav .nav-link:hover {
-	color: #917878;
+	color: #333333;
 	text-decoration: 2px underline;
-	text-decoration-color: #cd7676;
+	text-decoration-color: #4b0082;
 	transition: 1s;
 }
 /* Navbar ends */
@@ -68,9 +79,17 @@ body {
 	padding: 10rem;
 	display: flex;
 	justify-content: center;
-	/* height: 100vh; */
 	width: 100vw;
 	margin: 0;
+}
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
 }
 
 .title-wrapper {
@@ -82,23 +101,23 @@ body {
 }
 
 .title-text h1 {
-	font-size: 4rem;
+	font-size: 4.5rem;
 	overflow-y: hidden;
-	color: #cd7676;
+	color: #4b0082;
 	text-align: center;
-	font-family: 'Chakra Petch';
+	font-family: 'Montserrat';
 }
 
 .title-text p {
 	font-size: 1.5rem;
-	color: #423737;
+	color: #fafafa;
 	text-align: center;
 }
 .title-wrapper .title-job {
 	font-size: 2rem;
-	color: #423737;
+	color: #8a53b2;
 	text-align: center;
-	font-family: 'Chakra Petch';
+	font-family: 'Montserrat';
 }
 
 .icons > * {
@@ -108,40 +127,44 @@ body {
 /* Hero ends */
 
 /* About */
-.about h2 {
-	/* text-decoration: underline solid #423737 7px; */
-	color: #423737;
-	text-align: center;
-	font-family: 'Chakra Petch';
-	overflow-y: hidden;
-	text-decoration: underline #cd7676;
+.about {
+	background: #f0f0f0;
+	/* background: -webkit-linear-gradient(to right, #bfe9ff, #f6dee1);
+	background: linear-gradient(to right, #bfe9ff, #e6c9fc); */
 }
+.about h2 {
+	color: #820079;
+	text-align: center;
+	font-family: 'Dancing Script';
+	overflow-y: hidden;
+	font-weight: 500;
+}
+
 .skills {
 	padding-left: 15rem;
 	padding-right: 15rem;
 	text-align: center; /* Center the content horizontally */
+	/* background-color: #f8e5e3; */
 }
 
 .skills-box {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center; /* Center the content horizontally */
-	gap: 2rem; /* Add some space between skill cards */
+	gap: 4rem; /* Add some space between skill cards */
 }
 
 .skill-card {
-	width: 10rem; /* Adjust width to accommodate spacing */
+	width: 8rem; /* Adjust width to accommodate spacing */
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	perspective: 1000px;
-	border-radius: 15px;
-	/* background-color: #fafafa; */
 }
 
 .skill-icon {
-	width: 4em;
+	width: 5em;
 	transition: 0.6s;
 }
 
@@ -154,6 +177,27 @@ body {
 	color: #423737;
 	padding: 0.7rem 0 0 0;
 	font-weight: 600;
+}
+@keyframes floatUpDown {
+	0% {
+		transform: translateY(0) rotate(0deg); /* Initial position */
+	}
+	25% {
+		transform: translateY(-10px) rotate(5deg); /* Float up and rotate slightly to the right */
+	}
+	50% {
+		transform: translateY(0) rotate(0deg); /* Return to original position */
+	}
+	75% {
+		transform: translateY(-10px) rotate(-5deg); /* Float up and rotate slightly to the left */
+	}
+	100% {
+		transform: translateY(0) rotate(0deg); /* Return to original position */
+	}
+}
+
+.skill-card {
+	animation: floatUpDown 3s ease-in-out infinite; /* Adjust the duration and timing function as needed */
 }
 
 /* About ends */
@@ -175,18 +219,28 @@ body {
 }
 
 /* Projects */
-.projects h2 {
-	color: #423737;
-	text-align: center;
-	font-family: 'Chakra Petch';
-	overflow-y: hidden;
-	text-decoration: underline #cd7676;
+.projects {
+	background: #f0f0f0;
+}
+.project {
+	margin: 1rem;
+}
+.project-container {
+	padding: 3rem;
+	/* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 15px; */
+}
+.tool-icon:hover {
+	transform: rotateY(360deg);
 }
 
-.projects {
-	padding-left: 15rem;
-	padding-right: 15rem;
-	text-align: center; /* Center the content horizontally */
+.tool-icon {
+	transition: 0.6s;
+}
+
+.custom-btn {
+	background-color: #f0f0f0;
+	border: none;
 }
 
 /* Projects end */
