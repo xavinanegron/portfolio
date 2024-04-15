@@ -50,7 +50,7 @@ function Hero() {
 										<a
 											href='https://www.linkedin.com/in/xavinanegronds/'
 											target='_blank'
-											rel='noopener noreferrer'
+											rel='noreferrer'
 										>
 											<FontAwesomeIcon
 												icon={faLinkedin}
