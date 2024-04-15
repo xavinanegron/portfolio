@@ -2,8 +2,12 @@ import React from 'react';
 import DataSkills from './DataSkills.json';
 
 function About() {
+	const resumeImage = '/XavinaNegronPortfolio2024.pdf';
 	return (
-		<div className='about py-5' id='about'>
+		<div
+			className='about py-5'
+			id='about'
+		>
 			<div className='container py-5 text-center'>
 				<div className='container row'>
 					<div className='col-5 d-none d-lg-block align-self-center px-5'>
@@ -41,33 +45,40 @@ function About() {
 							free to explore further!
 						</p>
 						<p className='lead text-start'>
-							<button
-								className='custom-btn btn mb-5 mx-1'
-								href='#about'
-								style={{
-									marginTop: '2rem',
-									color: '#fafafa',
-									backgroundColor: '#cd4662',
-									fontSize: '1.3rem',
-									borderRadius: '0',
-								}}
-								onMouseOver={(e) => {
-									e.currentTarget.style.backgroundColor = '#e58c9e';
-									e.currentTarget.style.Color = '#cd4662';
-								}}
-								onMouseOut={(e) => {
-									e.currentTarget.style.backgroundColor = '#cd4662';
-									e.currentTarget.style.Color = '#cd4662';
-								}}
+							<a
+								href={resumeImage}
+								target='_blank'
 							>
-								Download Resume
-							</button>
+								<button
+									className='custom-btn btn mb-5 mx-1'
+									style={{
+										marginTop: '2rem',
+										color: '#fafafa',
+										backgroundColor: '#cd4662',
+										fontSize: '1.3rem',
+										borderRadius: '0',
+									}}
+									onMouseOver={(e) => {
+										e.currentTarget.style.backgroundColor = '#e58c9e';
+										e.currentTarget.style.Color = '#cd4662';
+									}}
+									onMouseOut={(e) => {
+										e.currentTarget.style.backgroundColor = '#cd4662';
+										e.currentTarget.style.Color = '#cd4662';
+									}}
+								>
+									Download Resume
+								</button>
+							</a>
 						</p>
 					</div>
 				</div>
 				<hr className='decorative-line' />
 			</div>
-			<div className='skills col-lg-12' id='skills'>
+			<div
+				className='skills col-lg-12'
+				id='skills'
+			>
 				<h2 className='section-title display-2 py-5  text-start'>
 					My Tech Stack
 				</h2>
@@ -107,6 +118,3 @@ function About() {
 }
 
 export default About;
-
-// className =
-// 	'hover:transition hover:ease-in-out hover:scale-110 hover:duration-300';
