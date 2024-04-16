@@ -2,7 +2,7 @@ import React from 'react';
 import DataSkills from './DataSkills.json';
 
 function About() {
-	const resumeImage = '/XavinaNegronPortfolio2024.pdf';
+	const resumePDF = '/XavinaNegronPortfolio2024.pdf';
 	return (
 		<div
 			className='about py-5'
@@ -52,7 +52,7 @@ function About() {
 						</p>
 						<p className='lead text-start'>
 							<a
-								href={resumeImage}
+								href={resumePDF}
 								target='_blank'
 								rel='noreferrer'
 							>
