@@ -4,7 +4,7 @@ export default function ContactForm() {
 	const [state, handleSubmit] = useForm('mvoeveag');
 
 	if (state.succeeded) {
-		return <p>Thanks for your submission!</p>;
+		return <p text-center>Thanks for your submission!</p>;
 	}
 
 	return (
