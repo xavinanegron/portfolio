@@ -29,6 +29,7 @@ body {
 	background: #ff6e7f;
 	background: -webkit-linear-gradient(to right, #f6d5f7, #fbe9d7);
 	background: linear-gradient(to right, #f6d5f7, #fbe9d7);
+	min-height: 100vh;
 }
 
 @keyframes gradientBG {
@@ -217,22 +218,6 @@ body {
 
 /* About ends */
 
-@media only screen and (max-width: 768px) {
-	.title-wrapper {
-		padding: 7rem 2rem; /* Adjust padding for smaller screens */
-	}
-
-	.title-text h1,
-	.title-text p {
-		color: black;
-	}
-
-	/* Right side of the page */
-	.welcome-message-container {
-		padding: 7rem 2rem; /* Adjust padding for smaller screens */
-	}
-}
-
 /* Projects */
 .projects {
 	background-color: #f7eaed;
@@ -305,4 +290,51 @@ body {
 .image-container::-webkit-scrollbar-thumb {
 	background-color: #cd4662;
 	border-radius: 6px;
+}
+
+/* Responsive Mobile */
+@media only screen and (max-width: 768px) {
+	.title-wrapper {
+		padding: 7rem 2rem; /* Adjust padding for smaller screens */
+	}
+
+	.title-text h1 {
+		font-size: 2rem; /* Smaller font size for mobile */
+	}
+
+	.title-text p,
+	.title-wrapper .title-job {
+		font-size: 1rem; /* Smaller font size for mobile */
+	}
+
+	.welcome-message-container {
+		padding: 7rem 2rem; /* Adjust padding for smaller screens */
+	}
+
+	.hero {
+		padding: 3rem 1rem; 
+		
+	}
+	.navbar-section {
+		background-color: rgba(255, 255, 255, 0.9);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		z-index: 1000;
+		width: 100%; /* Ensure full width */
+	}
+
+    .skills, .contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .skills-box {
+        gap: 2rem; /* Smaller gap */
+    }
+
+	.skills-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Center the content horizontally */
+	
+}
 }

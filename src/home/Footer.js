@@ -25,7 +25,7 @@ function Footer() {
 									}}
 								/>
 							</a>
-							<a href='mailto:your_email@example.com'>
+							<a href='mailto:xavinanegron@gmail.com'>
 								<FontAwesomeIcon
 									icon={faEnvelope}
 									style={{
