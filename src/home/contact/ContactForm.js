@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactForm() {
-	const [state, handleSubmit] = useForm('YOUR_FORM_ID');
+	const [state, handleSubmit] = useForm('mvoeveag');
 
 	if (state.succeeded) {
 		return <p>Thanks for your submission!</p>;
@@ -12,6 +12,7 @@ export default function ContactForm() {
 			<div className='row justify-content-center'>
 				<div className='col-lg-6'>
 					<form
+						action='https://formspree.io/f/mvoeveag'
 						method='POST'
 						onSubmit={handleSubmit}
 					>
@@ -90,7 +91,7 @@ export default function ContactForm() {
 									color: '#fafafa',
 									backgroundColor: '#cd4662',
 									fontSize: '1.3rem',
-                                    borderRadius:'0'
+									borderRadius: '0',
 								}}
 							>
 								{state.submitting ? 'Submitting...' : 'Submit'}
