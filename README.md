@@ -1,8 +1,8 @@
 # My Portfolio Website ✨
-![Xavina-Negron-Portfolio](https://github.com/xavinanegron/portfolio/assets/146385936/b293c8a7-8989-4eaf-b919-a0bc7f28b5f6)
 
 ## Live Demo
-Check out the live demo here: [Xavina Negron Portfolio]([)](https://www.xavina-negron.com/)
+Check out the live demo here: [My Portfolio](https://www.xavina-negron.com/)
+![Xavina-Negron-Portfolio](https://github.com/xavinanegron/portfolio/assets/146385936/b293c8a7-8989-4eaf-b919-a0bc7f28b5f6)
 
 # Getting Started with Create React App
 
