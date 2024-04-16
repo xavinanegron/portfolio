@@ -30,10 +30,6 @@ body {
 	background: -webkit-linear-gradient(to right, #f6d5f7, #fbe9d7);
 	background: linear-gradient(to right, #f6d5f7, #fbe9d7);
 }
-/* Peachy */
-/* background: #EC6F66; 
-background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  
-background: linear-gradient(to right, #F3A183, #EC6F66);  */
 
 @keyframes gradientBG {
 	0% {
@@ -82,7 +78,7 @@ background: linear-gradient(to right, #F3A183, #EC6F66);  */
 .links {
 	font-family: 'Poppins';
 	color: #333333;
-	font-size: 20px; 
+	font-size: 20px;
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -301,15 +297,12 @@ background: linear-gradient(to right, #F3A183, #EC6F66);  */
 
 /* Contact ends */
 
-/* Target the container with the scrollbar */
 .image-container::-webkit-scrollbar {
-    width: 10px; /* Set the width of the scrollbar */
+	width: 10px;
 }
 
 /* Handle */
 .image-container::-webkit-scrollbar-thumb {
-    background-color: #cd4662; /* Set the color of the scrollbar handle */
-    border-radius: 6px; /* Set the border radius of the scrollbar handle */
+	background-color: #cd4662;
+	border-radius: 6px;
 }
-
-

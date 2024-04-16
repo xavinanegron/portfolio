@@ -13,10 +13,16 @@ function About() {
 					<div className='col-5 d-none d-lg-block align-self-center px-5'>
 						<img
 							className='border border-secondary rounded-circle'
-							src='/public/profilepic.png'
+							src='/portfoliopic.jpg'
 							alt='profile'
-							width={375}
-							height={375}
+							width={350}
+							height={350}
+							style={{
+								objectFit: 'cover',
+								width: '100%',
+								height: '100%',
+								borderRadius: '50%',
+							}}
 						/>
 					</div>
 					<div className='col-lg-7'>
@@ -41,13 +47,14 @@ function About() {
 							Detail-oriented and with a boundless curiosity, I see software
 							development as the perfect canvas for my skills. It's where I
 							thrive on creative problem-solving and relish the chance to dive
-							into challenges headfirst.. Thanks for visiting my portfolio! Feel
+							into challenges headfirst. Thanks for visiting my portfolio! Feel
 							free to explore further!
 						</p>
 						<p className='lead text-start'>
 							<a
 								href={resumeImage}
 								target='_blank'
+								rel='noreferrer'
 							>
 								<button
 									className='custom-btn btn mb-5 mx-1'
