@@ -2,7 +2,7 @@ import React from 'react';
 import DataSkills from './DataSkills.json';
 
 function About() {
-	const resumePDF = '/XavinaNegronPortfolio2024.pdf';
+	const resumePDF = '/XavinaNegron2024Resume.pdf';
 	return (
 		<div
 			className='about py-5'

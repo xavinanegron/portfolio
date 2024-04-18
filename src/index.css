@@ -293,9 +293,9 @@ body {
 }
 
 /* Responsive Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.title-wrapper {
-		padding: 7rem 2rem; /* Adjust padding for smaller screens */
+		padding: 4rem 2rem; /* Adjust padding for smaller screens */
 	}
 
 	.title-text h1 {
@@ -307,13 +307,8 @@ body {
 		font-size: 1rem; /* Smaller font size for mobile */
 	}
 
-	.welcome-message-container {
-		padding: 4rem 2rem; /* Adjust padding for smaller screens */
-	}
-
 	.hero {
-		padding: 3rem 1rem; 
-		
+		padding: 3rem 1rem;
 	}
 	.navbar-section {
 		background-color: rgba(255, 255, 255, 0.9);
@@ -322,19 +317,23 @@ body {
 		width: 100%; /* Ensure full width */
 	}
 
-    .skills, .contact {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+	.about-info p {
+		text-align: center;
+	}
 
-    .skills-box {
-        gap: 2rem; /* Smaller gap */
-    }
+	.skills,
+	.contact {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 
 	.skills-box {
-	display: flex;
-	flex-direction: column;
-	justify-content: center; /* Center the content horizontally */
-	
-}
+		gap: 2rem; /* Smaller gap */
+	}
+
+	.skills-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center; /* Center the content horizontally */
+	}
 }
