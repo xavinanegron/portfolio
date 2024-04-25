@@ -2,7 +2,7 @@ import React from 'react';
 import DataSkills from './DataSkills.json';
 
 function About() {
-	const resumePDF = '/XavinaNegron2024Resume.pdf';
+	const resumePDF = '/XavinaNegronResume2024.pdf';
 	return (
 		<div
 			className='about py-5'
@@ -13,14 +13,14 @@ function About() {
 					<div className='col-5 d-none d-lg-block align-self-center px-5'>
 						<img
 							className='border border-secondary rounded-circle'
-							src='/portfoliopic.jpg'
+							src='/myprofile.jpg'
 							alt='profile'
-							width={350}
-							height={350}
 							style={{
 								objectFit: 'cover',
 								width: '100%',
-								height: '100%',
+								height: 'auto',
+								maxWidth: '350px',
+								maxHeight: '350px',
 								borderRadius: '50%',
 							}}
 						/>
@@ -39,11 +39,11 @@ function About() {
 								lineHeight: '40px',
 							}}
 						>
-							Hi there, I'm Xavina, currently pursuing a BAS degree in Computing
-							Technology and Software Development and most recently a graduate
-							of Nucamp's Full Stack Web and Mobile App Development bootcamp.
-							Outside of coding, I find joy in painting, taking my miniature
-							australian shepherd out for walks and staying active. <br />
+							Hi there, I'm Xavina, a Front End web developer and most recently
+							a graduate of Nucamp's Full Stack Web and Mobile App Development
+							bootcamp. Outside of coding, I find joy in painting, taking my
+							miniature australian shepherd out for walks and staying active.{' '}
+							<br />
 							Detail-oriented and with a boundless curiosity, I see software
 							development as the perfect canvas for my skills. It's where I
 							thrive on creative problem-solving and relish the chance to dive
