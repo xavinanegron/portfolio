@@ -89,15 +89,12 @@ function Projects() {
 						>
 							<div className='project'>
 								<div className='project-container'>
-									<div
-										className='video-container'
-										style={{ maxHeight: '300px', overflowY: 'auto' }}
-									>
-										<video
+									<div className='image-container'>
+										<img
 											src={project.imageUrl}
 											alt={project.title}
 											style={{
-												width: '100%',
+												maxWidth: '100%',
 												height: 'auto',
 												display: 'block',
 											}}
@@ -122,7 +119,7 @@ function Projects() {
 											fontWeight: 300,
 											color: '#333333',
 											lineHeight: '28px',
-											textAlign: 'justify',
+											textAlign: 'center',
 										}}
 									>
 										{project.description}
