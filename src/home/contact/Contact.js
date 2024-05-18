@@ -3,7 +3,10 @@ import ContactForm from './ContactForm';
 
 function Contact() {
 	return (
-		<div className='contact py-5' id='contact'>
+		<div
+			className='contact py-5'
+			id='contact'
+		>
 			<div className='container py-5 text-center'>
 				<div className='container row'>
 					<div className='col-5 d-none d-lg-block align-self-center px-5'></div>
@@ -11,10 +14,8 @@ function Contact() {
 						<h2 className='display-2 mb-5 mt-5 text-center'>Get In Touch!</h2>
 						<p
 							style={{
-								fontSize: '20px',
 								fontFamily: 'Poppins',
 								color: '#333333',
-								lineHeight: '40px',
 							}}
 						>
 							Feel free to reach out! I'm eager to connect and explore
@@ -28,7 +29,7 @@ function Contact() {
 					</div>
 				</div>
 			</div>
-            <ContactForm/>
+			<ContactForm />
 		</div>
 	);
 }

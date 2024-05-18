@@ -14,14 +14,13 @@ function Hero() {
 			>
 				<div className='row title-container'>
 					<div className='col-lg-12 d-flex align-items-center'>
-						<div className='title-wrapper p-5'>
+						<div className='title-wrapper'>
 							<div className='title-text'>
 								<h1>
 									Hello,{' '}
 									<span
 										style={{
 											fontFamily: 'BrotherSignature',
-											fontSize: '4.7rem',
 										}}
 									>
 										I'm Xavina{' '}
@@ -32,10 +31,8 @@ function Hero() {
 								</p>
 								<div className='welcome-message'>
 									<p
-										className='message px-5'
+										className='message'
 										style={{
-											fontSize: '22px',
-											lineHeight: '40px',
 											color: '#333333',
 											fontWeight: '300',
 										}}

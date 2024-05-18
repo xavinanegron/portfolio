@@ -33,10 +33,8 @@ function About() {
 						<p
 							className='about-info lead text-start'
 							style={{
-								fontSize: '20px',
 								fontFamily: 'Poppins',
 								color: '#333333',
-								lineHeight: '40px',
 							}}
 						>
 							Hi there, I'm Xavina, a Front End web developer and most recently

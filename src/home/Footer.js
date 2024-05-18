@@ -55,10 +55,8 @@ function Footer() {
 						<p
 							className='footer-text'
 							style={{
-								fontSize: '20px',
 								fontFamily: 'Poppins',
 								color: '#333333',
-								lineHeight: '40px',
 								display: 'flex',
 								alignItems: 'center', // Vertical alignment
 								justifyContent: 'center', // Optional: Horizontal alignment
@@ -67,10 +65,9 @@ function Footer() {
 							Designed and developed with{' '}
 							<FontAwesomeIcon
 								icon={faHeart}
+								className='footer-icon'
 								style={{
 									color: '#cd4662',
-									fontSize: '25px',
-									padding: '10px',
 									cursor: 'pointer',
 								}}
 							/>{' '}
