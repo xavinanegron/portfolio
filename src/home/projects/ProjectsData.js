@@ -1,16 +1,6 @@
 const projectsData = [
 	{
 		id: 1,
-		title: 'The Met Mixer',
-		description:
-			"App that generates random artwork from the Metropolitan Museum of Art's API along with a description. This project uses vanilla javascript to connect to a public API and update the webpage's content dynamically.",
-		tools: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
-		demoLink: 'https://the-met-mixer.vercel.app/',
-		githubLink: 'https://github.com/xavinanegron/TheMetMixer.git',
-		imageUrl: '/assets/metscreenshot.png',
-	},
-	{
-		id: 2,
 		title: 'Insurance Consultancy Firm Website',
 		description:
 			'Created a user-friendly website for an insurance consultancy firm specializing in various insurance types. Integrated personalized insurance solutions, detailed service information, and career opportunities. Implemented form validation for accurate data submission and ensured a clean, professional interface for seamless navigation.',
@@ -18,6 +8,16 @@ const projectsData = [
 		demoLink: 'https://www.desantiagoconsultant.com/',
 		githubLink: 'https://github.com/xavinanegron/Insurance-agent-website.git',
 		imageUrl: '/assets/insurancewebsitescreenshot.png',
+	},
+	{
+		id: 2,
+		title: 'The Met Mixer',
+		description:
+			"App that generates random artwork from the Metropolitan Museum of Art's API along with a description. This project uses vanilla javascript to connect to a public API and update the webpage's content dynamically.",
+		tools: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+		demoLink: 'https://the-met-mixer.vercel.app/',
+		githubLink: 'https://github.com/xavinanegron/TheMetMixer.git',
+		imageUrl: '/assets/metscreenshot.png',
 	},
 	{
 		id: 3,

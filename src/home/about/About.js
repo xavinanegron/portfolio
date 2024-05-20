@@ -10,18 +10,19 @@ function About() {
 		>
 			<div className='container py-5 text-center'>
 				<div className='container row'>
-					<div className='col-5 d-none d-lg-block align-self-center px-5'>
+					<div className='col-lg-5 col-md-8 align-self-center px-5'>
 						<img
-							className='border border-secondary rounded-circle'
+							className='border border-secondary rounded-circle img-fluid mb-5'
 							src='/myprofile.jpg'
 							alt='profile'
 							style={{
 								objectFit: 'cover',
 								width: '100%',
-								height: 'auto',
-								maxWidth: '350px',
+								height: '100%',
 								maxHeight: '350px',
+								maxWidth: '350px',
 								borderRadius: '50%',
+								overflow: 'hidden',
 							}}
 						/>
 					</div>
