@@ -27,9 +27,7 @@ function About() {
 						/>
 					</div>
 					<div className='col-lg-7'>
-						<h2 className='display-2 mb-5 text-start'>
-							A little bit about me!
-						</h2>
+						<h2 className='display-2 mb-5 text-start'>About me!</h2>
 
 						<p
 							className='about-info lead text-start'
@@ -38,15 +36,13 @@ function About() {
 								color: '#333333',
 							}}
 						>
-							Hi there, I'm Xavina, a Front End web developer and most recently
-							a graduate of Nucamp's Full Stack Web and Mobile App Development
-							bootcamp. Outside of coding, I find joy in painting, taking my
-							miniature australian shepherd out for walks and staying active.{' '}
-							<br />
-							Detail-oriented and with a boundless curiosity, I see software
+							My name is Xavina, a web developer and most recently a graduate of
+							Nucamp's Full Stack Web and Mobile App Development bootcamp.
+							Outside of coding, I find joy in painting, taking my mini aussie out for walks and staying active. <br />
+							Detail-oriented and with a boundless curiosity, I see web
 							development as the perfect canvas for my skills. It's where I
 							thrive on creative problem-solving and relish the chance to dive
-							into challenges headfirst. Thanks for visiting my portfolio! Feel
+							into challenges headfirst. Thanks for visiting my portfolio. Feel
 							free to explore further!
 						</p>
 						<p className='lead text-start'>

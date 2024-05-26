@@ -79,7 +79,7 @@ function Projects() {
 						overflowY: 'hidden',
 					}}
 				>
-					Some of my Work!
+					Some of my Projects!
 				</h2>
 				<div className='row'>
 					{projects.map((project) => (
